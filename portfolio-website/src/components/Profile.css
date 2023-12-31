@@ -1,9 +1,11 @@
 .profile-section {
-    padding: 20px;
-    background-color: #f5f5f5;
+    padding: 0px;
+    background-color: #d62020;
+    height: 94vh;
   }
   
   .profile-section h2 {
     color: #333;
+    margin: 0;
   }
   
