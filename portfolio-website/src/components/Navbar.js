@@ -1,6 +1,8 @@
 // Navbar.js
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import logoImage from "./Imgs/N.png";
 
 const Navbar = () => {
   const [isScrolled, setScrolled] = useState(false);
@@ -18,14 +20,21 @@ const Navbar = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-links">
-        <img src="./components/logo.svg"/>
-        <a href="#profile">Profile</a>
-        <a href="#projects">Projects</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#expertise">Expertise</a>
+        <img src={logoImage} alt="Your logo" id="logo"></img>
+        <button onClick={() => scrollToSection("profile")}>Profile</button>
+        <button onClick={() => scrollToSection("projects")}>Projects</button>
+        <button onClick={() => scrollToSection("blogs")}>Blogs</button>
+        <button onClick={() => scrollToSection("expertise")}>Expertise</button>
       </div>
     </nav>
   );
