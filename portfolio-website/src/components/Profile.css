@@ -1,9 +1,84 @@
+img {
+  margin-right: 1vw;
+}
+
 .profile-section {
-    padding: 20px;
-    background-color: #f5f5f5;
+    padding: 0px;
+    background-color: #d62020;
+    height: 94vh;
   }
   
   .profile-section h2 {
     color: #333;
+    margin: 0;
+  }
+
+  #profile_top {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: yellow; */
+    height: 31vh;
+    width: 100vw;
+  }
+
+  #profile_bot {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    height: 31vh;
+    width: 100vw;
+  }
+
+  #profile_mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    height: 32vh;
+    width: 100vw;
   }
   
+  #about_me {
+    background-color: rgb(11, 223, 216);
+    height: 31vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-left: 1vw;
+  }
+
+  #profile_pic {
+    height: 32vh;
+    width: 18vw;
+    border-radius: 50%;
+  }
+
+  #askQue {
+    background-color: cyan;
+    height: 31vh;
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-left: 1vw;
+  }
+
+  #contact_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 31vh;
+    width: 50vw;
+  }
+
+  #ph{
+    width: 50vw;
+    height: 31vh;
+    background-color: aliceblue;
+  }

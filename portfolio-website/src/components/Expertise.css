@@ -1,6 +1,8 @@
 /* Expertise.css */
 .expertise-section {
-    padding: 20px;
+    padding: 0px;
+    height: 94vh;
+    background-color: #990edf;
   }
   
   .expertise-list {
